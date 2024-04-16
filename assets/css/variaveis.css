@@ -1,0 +1,17 @@
+:root {
+    
+    --section-padding: 24px;
+    --top-bar-height: 64px;
+
+    /* tamanho e familia da fonte */
+    --font-1rem: 1rem; /* 16px tamanho padrão */
+    --font-0_9rem: 0.9rem; /* 14px tamanho padrão */
+    --font-2rem: 2rem; /* 32px relativo ao tamanho padrão */
+    --font-1_3rem: 1.3rem; /* 20.8pxrelativo ao tamnho da fonte */
+    --font-1_25rem: 1.25rem; /* 20px relativo ao tamnho da fonte */
+    --font-1_4rem: 1.4rem; /* 22.4px relativo ao tamnho da fonte */
+    --font-3_5rem: 3.5rem; /* 30px tamnho do titulo topo */
+    --font-5rem: 5rem; /* 30px tamnho do titulo topo */
+    --font-family: "Poppins", sans-serif;
+  }
+  
