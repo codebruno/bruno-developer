@@ -56,3 +56,67 @@ picture{
         color: $blue;
     }
 }
+
+.social{
+    display: flex;
+    column-gap: 8px;
+    margin-top: 24px;
+}
+
+.social_link{
+    width: 46px;
+    height: 46px;
+
+    border-radius: 4px;
+    background: $btn-primary;
+    color: $btn-secondary;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: ease-in-out all .3s;
+
+    i{
+        font-size: 22px; 
+    }
+}
+
+// HOVER SOCIAL MIDIA------------
+.social_link:hover{
+    background: $btn-secondary;
+    color: $btn-primary;
+    transform: translateY(-10px);
+}
+//--------------------------------
+
+.cv{
+    margin-top: 20px;
+}
+
+.cv_link{
+    color: $btn-terciary;
+    font-weight: 600;
+    
+    border: 2px solid $btn-terciary;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-top: 18px;
+
+    box-shadow: 0px 6px 0px -2px $btn-primary;
+
+    transition: ease-in-out all .3s;
+
+}
+// HOVER CV------------------------
+.cv_link:hover{
+    color: $btn-quartary;
+
+    font-weight: 600;
+    border: 2px solid $btn-primary;
+    background:  $btn-primary;
+    box-shadow: 0 0 $btn-primary; 
+   
+    transform: translateY(1px);
+}
+//----------------------------------
