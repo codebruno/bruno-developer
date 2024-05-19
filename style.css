@@ -60,34 +60,56 @@
 
 .social {
   display: flex;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
-  margin-top: 24px;
+  gap: 34px;
+}
+.social i {
+  font-size: 1.3rem;
+  transition: ease-in-out all 0.3s;
+}
+
+.github:hover {
+  color: #fff;
+}
+
+.linkedin:hover {
+  color: #007bb5;
+}
+
+.instagram:hover {
+  color: #125688;
+}
+
+.youtube:hover {
+  color: #bb0000;
 }
 
 .social_link {
-  width: 46px;
-  height: 46px;
-  border-radius: 4px;
-  background: #D4FAFC;
+  position: relative;
   color: #31363F;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: ease-in-out all 0.3s;
-}
-.social_link i {
-  font-size: 22px;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
 }
 
-.social_link:hover {
-  background: #31363F;
-  color: #D4FAFC;
-  transform: translateY(-10px);
+.social_link:before {
+  content: " ";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #31363F;
+  transition: transform 0.3s ease;
+}
+
+.social_link:hover:before {
+  transform: rotate(45deg);
 }
 
 .cv {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .cv_link {
@@ -96,7 +118,6 @@
   border: 2px solid #31363F;
   border-radius: 4px;
   padding: 8px 10px;
-  margin-top: 18px;
   box-shadow: 0px 6px 0px -2px #D4FAFC;
   transition: ease-in-out all 0.3s;
 }
@@ -108,6 +129,21 @@
   background: #D4FAFC;
   box-shadow: 0 0 #D4FAFC;
   transform: translateY(1px);
+}
+
+.about {
+  padding: 32px;
+}
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+  text-align: justify;
+  margin-top: 12px;
+  color: #a3a3a3;
+}
+.about a {
+  color: #D4FAFC;
 }
 
 body {
@@ -138,4 +174,10 @@ img {
   border-radius: 12px;
   background: #212121;
   box-shadow: 1px 1px 1px 1px #212121;
+}
+
+.subtitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

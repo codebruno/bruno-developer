@@ -57,41 +57,69 @@ picture{
     }
 }
 
-.social{
+.social {
     display: flex;
-    column-gap: 8px;
-    margin-top: 24px;
+    gap: 34px;
+
+    i{
+        font-size: 1.3rem;
+        transition: ease-in-out all .3s;
+    }
 }
 
-.social_link{
-    width: 46px;
-    height: 46px;
+// HOVER SOCIAL ICONES------------
+.github:hover{
+    color: $git;
+}
 
-    border-radius: 4px;
-    background: $btn-primary;
+.linkedin:hover{
+    color: $linkedin;
+}
+
+.instagram:hover{
+    color: $insta;
+}
+
+.youtube:hover{
+    color: $tube;
+}
+//--------------------------------
+.social_link {
+    position: relative;
     color: $btn-secondary;
+    margin-top: 10px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    
+    width: 30px;
+    height: 30px;
 
-    transition: ease-in-out all .3s;
-
-    i{
-        font-size: 22px; 
-    }
+    transition: transform 0.3s ease;
 }
 
 // HOVER SOCIAL MIDIA------------
-.social_link:hover{
-    background: $btn-secondary;
-    color: $btn-primary;
-    transform: translateY(-10px);
+.social_link:before {
+    content: " ";
+    position: absolute;
+
+    width:  45px;
+    height: 45px;
+
+    border: 2px solid $btn-secondary;
+    
+    transition: transform 0.3s ease;
+}
+
+.social_link:hover:before {
+    transform: rotate(45deg);
 }
 //--------------------------------
 
 .cv{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .cv_link{
@@ -100,8 +128,8 @@ picture{
     
     border: 2px solid $btn-terciary;
     border-radius: 4px;
+
     padding: 8px 10px;
-    margin-top: 18px;
 
     box-shadow: 0px 6px 0px -2px $btn-primary;
 
